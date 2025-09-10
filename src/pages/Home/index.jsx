@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Books from "../../components/Books";
 import "./style.css";
 
 export default function Home() {
   return <>
     <Navbar/>
-    <h1>Home Page</h1>
+    <Books/>
     </>;
 }
