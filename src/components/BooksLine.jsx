@@ -9,6 +9,7 @@ export default function BooksLine() {
             <Book />
             <Book />
             <Book />
+            <Book />
         </div>
     </>
   );
