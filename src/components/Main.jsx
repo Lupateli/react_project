@@ -1,5 +1,4 @@
 import React from "react";
-import BooksLine from "./BooksLine";
 import ButtonPromotion from "./ButtonPromotion";
 import ButtonTop from "./ButtomTop";
 
@@ -13,9 +12,7 @@ const Main = () => {
                 <ButtonTop />
             </div>       
         </div>
-        
-        <BooksLine/>
-        <BooksLine/>
+
     </main>
   );
 };
