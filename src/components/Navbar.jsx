@@ -6,13 +6,13 @@ export default function Navbar() {
 
 
   return <>
-    <nav className="bg-gray-600 text-white px-4 py-3 flex justify-between items-center">
-        <a href="/" className="text-lg font-semibold">
+    <nav className="bg-gray-600 text-white px-4 py-5 flex justify-between items-center">
+        <a href="/" className="text-2xl font-semibold">
           Acessibilit
         </a>
 
         {/* Menu Desktop */}
-        <ul className="hidden md:flex gap-8">
+        <ul className="hidden md:flex gap-8 text-2xl">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
