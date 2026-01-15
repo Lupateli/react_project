@@ -5,3 +5,38 @@
 body{
     background-color: rgba(247, 239, 228, 0.868);
 }
+/* Estilos para o modo de Alto Contraste */
+body.high-contrast {
+    background-color: #000000 !important;
+    color: #ffff00 !important; /* Texto Amarelo (padrão de acessibilidade) */
+}
+
+/* Força cores em todos os elementos de texto e links */
+body.high-contrast *,
+body.high-contrast a,
+body.high-contrast p,
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3 {
+    color: #ffff00 !important;
+    background-color: #000000 !important;
+    border-color: #ffff00 !important;
+}
+
+/* Estilo para botões no modo contraste */
+body.high-contrast button {
+    background-color: #000000 !important;
+    color: #ffff00 !important;
+    border: 2px solid #ffff00 !important;
+}
+
+/* Inverte ou destaca imagens para facilitar a visão */
+body.high-contrast img {
+    filter: grayscale(100%) contrast(120%);
+    border: 2px solid #ffff00;
+}
+
+/* Mantém o dropdown de acessibilidade visível */
+body.high-contrast .absolute {
+    border: 2px solid #ffff00 !important;
+}
