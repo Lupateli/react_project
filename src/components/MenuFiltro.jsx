@@ -1,6 +1,6 @@
 export default function MenuFiltro() {
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md w-full max-w-sm">
+    <div className="bg-white p-2 rounded-lg shadow-md w-full max-w-sm">
       <h3 className="text-lg font-semibold mb-4">Filter Books</h3>
       <form className="flex flex-col gap-4">
         <div>

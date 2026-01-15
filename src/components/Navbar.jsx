@@ -72,9 +72,22 @@ export default function Navbar() {
          </div> 
          <div className="flex justify-around gap-4 flex-1 items-center"> 
           {/* Logo */}
-              <a href="/" className="text-2xl font-semibold">
+              <a href="/" className="text-3xl font-semibold">
                 Book store
               </a>
+              <div className="flex-1 max-w-md mx-4 hidden sm:block">
+                <div className="relative">
+                  <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                  </span>
+                  <input
+                    type="search"
+                    className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                    placeholder="Pesquisar livros..."
+                    aria-label="Pesquisar livros no catálogo"
+                  />
+                </div>
+              </div>
         
 
             {/* Menu Desktop */}
@@ -167,10 +180,22 @@ export default function Navbar() {
             <span className="text-lg font-semibold">Menu</span>
             <button onClick={() => setMenuOpen(false)} className="text-3xl" aria-label="Close Menu">✕</button>
           </div>   
-          <ul className="flex flex-col items-center justify-center flex-1 gap-8 text-xl">
-            <li><a href="/" onClick={() => setMenuOpen(false)}>Home</a></li>
-            <li><a href="/about" onClick={() => setMenuOpen(false)}>About</a></li>
-            <li><a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+          
+          {/* Barra de Pesquisa no Mobile */}
+          <div className="relative m-3">
+            <input
+              type="search"
+              className="w-full p-3 pl-10 rounded-lg bg-gray-700 text-white border border-gray-600 outline-none focus:border-blue-400"
+              placeholder="What do you search?"
+            />
+            <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </span>
+          </div>
+          <ul className="flex flex-col p-4 flex-1 gap-8 text-3xl">
+            <li className="border-b border-white/20"><a href="/profile" onClick={() => setMenuOpen(false)}>Profile</a></li>
+            <li className="border-b border-white/20"><a href="/about" onClick={() => setMenuOpen(false)}>About</a></li>
+            <li className="border-b border-white/20"><a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
           </ul>
         </div>
       )}

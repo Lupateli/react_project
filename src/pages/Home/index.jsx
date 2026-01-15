@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className="flex-1">
         <Main/>
-        <div className="flex flex-row gap-6 max-w-7x1 mx-auto px-4 py-8flex mx-auto px-4 py-8">
+        <div className="flex flex-row gap-6 max-w-7x1 mx-auto px-4 py-8 flex py-8">
           <MenuFiltro />
           <div className="flex-1"> {/* Envolva o BooksGrid em uma div que cresce */}
             <BooksGrid />

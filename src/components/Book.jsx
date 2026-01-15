@@ -5,7 +5,7 @@ export default function Book({ title, price, image, info }) {
     <div className="
       bg-white rounded-lg shadow-lg
       p-4
-      w-full max-w-[260px]
+      w-full max-w-[300px]
       flex flex-col items-center text-center
     ">
 
