@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -92,8 +94,8 @@ export default function Navbar() {
 
             {/* Menu Desktop */}
             <ul className="hidden md:flex gap-8 text-2xl">
-              <li><a 
-                    href="/" 
+              <li><Link 
+                    to="/" 
                     className="flex items-center gap-2 p-2 rounded-md hover:bg-slate-700 transition-colors group"
                     aria-label="Initial page"
                   >
@@ -113,9 +115,9 @@ export default function Navbar() {
                       <polyline points="9 22 9 12 15 12 15 22"/>
                     </svg>
                     <span className="text-lg font-medium">Home</span>
-                  </a></li>
-              <li><a 
-                    href="/login" 
+                  </Link></li>
+              <li><Link 
+                    to="/Login" 
                     className="flex items-center gap-2 p-2 rounded-md hover:bg-slate-700 transition-colors group"
                     aria-label="Login page"
                   >
@@ -137,7 +139,7 @@ export default function Navbar() {
                     
                     {/* Texto ao lado do ícone */}
                     <span className="text-lg font-medium">Login</span>
-                  </a></li>
+                  </Link></li>
               <li><button 
                   className="p-2 rounded-2xl hover:bg-slate-800 transition-colors relative"
                   aria-label="Look shopping cart"
@@ -194,8 +196,8 @@ export default function Navbar() {
           </div>
           <ul className="flex flex-col p-4 flex-1 gap-8 text-3xl">
             <li className="border-b border-white/20"><a href="/profile" onClick={() => setMenuOpen(false)}>Profile</a></li>
-            <li className="border-b border-white/20"><a href="/about" onClick={() => setMenuOpen(false)}>About</a></li>
-            <li className="border-b border-white/20"><a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+            <li className="border-b border-white/20"><a href="/about" onClick={() => setMenuOpen(false)}>Login</a></li>
+            <li className="border-b border-white/20"><a href="/contact" onClick={() => setMenuOpen(false)}>Cart</a></li>
           </ul>
         </div>
       )}
