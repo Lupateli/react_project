@@ -140,10 +140,11 @@ export default function Navbar() {
                     {/* Texto ao lado do ícone */}
                     <span className="text-lg font-medium">Login</span>
                   </Link></li>
-              <li><button 
-                  className="p-2 rounded-2xl hover:bg-slate-800 transition-colors relative"
-                  aria-label="Look shopping cart"
-                >
+              <li><Link 
+                    to="/Cart" 
+                    className="flex items-center rounded-md hover:bg-slate-800 transition-colors group"
+                    aria-label="Shopping cart">
+                  <button className="p-2 rounded-2xl transition-colors relative">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="24" 
@@ -152,7 +153,7 @@ export default function Navbar() {
                     fill="none" 
                     stroke="currentColor" 
                     strokeWidth="2" 
-                    strokeLinecap="round" 
+                    strokeLinecap="round"   
                     strokeLinejoin="round"
                   >
                     <circle cx="9" cy="21" r="1"></circle>
@@ -163,7 +164,7 @@ export default function Navbar() {
                    <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center -mt-1 -mr-1">
                     3 
                   </span> 
-                </button></li>
+                </button></Link></li>
             </ul>
           </div>  
 

@@ -3,13 +3,12 @@ import { books } from "../data/books";
 
 export default function BooksGrid() {
   return (
-    <section className="px- py-8">
+    <section className="px- py-8 mx-auto">
       <div
-        className="
+        className="grid-cols-2 md:grid-cols-3 lg:grid-cols-4
           grid
           gap-4 sm:gap-5
           justify-items-center
-          [grid-template-columns:repeat(auto-fill,minmax(280px,1fr))]
         "
       >
         {books.map(book => (
