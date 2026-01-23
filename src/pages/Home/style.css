@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background-color: rgba(247, 239, 228, 0.868);
+    background-color: rgba(250, 244, 235, 0.868);
 }
 /* Estilos para o modo de Alto Contraste */
 body.high-contrast {

@@ -12,7 +12,7 @@ export default function Home() {
       <div className="min-h-screen flex flex-col">
         <Navbar />
 
-        <main className="flex-1">
+        <main className=" flex-1">
           {/* O componente Main (Banner) continua no topo */}
           <Main />
 
@@ -20,7 +20,7 @@ export default function Home() {
             'flex-col' para mobile (um embaixo do outro)
             'md:flex-row' para desktop (lado a lado) 
           */}
-          <div className="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto px-4 py-8">
+          <div className="flex flex-col md:flex-row gap-6 max-w-8xl mx-auto px-4 py-8">
             
             {/* O Filtro ocupará a largura total no mobile e largura fixa no desktop */}
             <aside className="w-full md:w-64">
