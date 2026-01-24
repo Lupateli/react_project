@@ -60,7 +60,7 @@ export const books = [
     category: "Romance",
     price: "209,99",
     image: "/src/assets/images/afera.jpg",
-    autor: "Nicholas Sparks",
+    autor: "Lotte & Soren Hammer",
   },
   {  
     id: 8,

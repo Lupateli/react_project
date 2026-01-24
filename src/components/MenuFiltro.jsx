@@ -16,6 +16,10 @@ export default function MenuFiltro() {
           <label htmlFor="ano" className="block text-sm font-medium text-gray-700 mb-1">Publication Year</label>
           <input type="number" id="ano" placeholder="Ex: 2020" className="w-full p-2 border border-gray-300 rounded-md"/>
         </div>
+        <div>
+          <label htmlFor="autor" className="block text-sm font-medium text-gray-700 mb-1">Author</label>
+          <input type="text" id="autor" placeholder="Ex: Jules Verne" className="w-full p-2 border border-gray-300 rounded-md"/>
+        </div>
         <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200">
           Filter Apply
         </button>
